@@ -40,12 +40,12 @@ fun CourseCard(
     course: Course,
     modifier: Modifier = Modifier
 ) {
-    var isExpanded by rememberSaveable { mutableStateOf(true) }
+    var isExpanded by rememberSaveable { mutableStateOf(false) }
     Card(
         modifier = modifier
             .padding(8.dp)
             .fillMaxWidth()
-            .clickable { isExpanded = !isExpanded }
+//            .clickable { isExpanded = !isExpanded }
             .animateContentSize(
                 animationSpec = spring(
                     dampingRatio = Spring.DampingRatioMediumBouncy,
